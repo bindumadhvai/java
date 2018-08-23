@@ -1,0 +1,13 @@
+- hosts: web
+  gather_facts: no
+  become: yes
+  roles:
+       - { role: tomcat_installation }
+       - { role: deploy_java }
+#       - { role: apache_installation, req=="" }
+
+#- hosts: cpy
+#  become: yes
+#  roles:
+#       - { role: copy_file, when: req=="copy" }
+

@@ -1,0 +1,14 @@
+- name: msg
+  debug:
+     msg: "hie"
+
+- name: changing war file name 
+  copy:
+     src: ~/git_java/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
+     dest: ~/git_java/SpringMVCSecurityXML/target/bindu.war
+
+- name: building java app
+  maven:
+     name: clean install
+     state: present
+

@@ -1,0 +1,5 @@
+- tasks: 
+   - name:
+     copy: 
+        src: /home/ubuntu/hello.txt
+        dest: /home/ubuntu

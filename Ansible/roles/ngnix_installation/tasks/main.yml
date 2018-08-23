@@ -1,0 +1,6 @@
+  - name: installation
+    apt:
+        name: nginx
+        state: present
+
+

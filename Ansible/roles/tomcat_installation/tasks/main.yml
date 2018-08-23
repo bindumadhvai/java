@@ -1,0 +1,9 @@
+    - name: tomcat installation
+      apt:
+        name: tomcat8
+        state: present
+    - name: service running
+      service:
+        name: tomcat8
+        state: started
+

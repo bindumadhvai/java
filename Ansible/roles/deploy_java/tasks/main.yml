@@ -1,0 +1,10 @@
+- name: deploy war on tomcat8
+  copy:
+       src: /var/lib/jenkins/workspace/Java/SpringMVCSecurityXML/target/SpringMVCSecurityXML.war
+       dest: /var/lib/tomcat8/webapps/
+
+- name: restart tomcat
+  service:
+      name: tomcat8
+      state: restarted
+
